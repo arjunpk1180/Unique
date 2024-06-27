@@ -1,13 +1,13 @@
 .un-tab{
-    width: 100%;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    // padding: $spacer-5 $spacer-0;
+    // width: 100%;
+    // height: auto;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    padding: $spacer-5 $spacer-0;
 
     ul{
-        gap: 25px;
+        gap: 20px;
     }
 
     .nav{
@@ -16,23 +16,48 @@
     }
     .nav-pills .nav-link.active{
         background-color: $color-black;
+        font-weight: 600;
     }
     .nav-pills .nav-link{
-        background-color: $color-grey-1;
+        background-color: $color-grey-2;
         border-radius: 1.25rem;
+        font-weight: 600;
     }
     .nav-link{
         color: $color-black;
         padding: $spacer-2 $spacer-4;
     }
     .fade{
-        transition: ease-in 0.4s;
+        transition: ease-in 0.3s;
+    }
+
+    .un-title__sub, .un-title__head, .un-title__cnt{
+        text-align: center;
     }
 
 }
 
+@include tablet{
+    .un-tab{
+        .mt-5{
+            margin-top: 20px !important;
+        }
+    }
+}
+
 @include mobile{
-    .un-tab .nav-link{
-        width: 150px;
+    .un-tab{
+        br{
+            display: none;
+        }
+        .nav-link{
+            width: 150px;
+        }
+        .un-title__cnt{
+            margin-bottom: 0px;
+        }
+        .mt-5{
+            margin-top: 20px !important;
+        }
     }
 }

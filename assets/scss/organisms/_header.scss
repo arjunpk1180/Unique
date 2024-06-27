@@ -1,5 +1,6 @@
 .un-header{
     width: 100%;
+    background-color: #070707;
 
     .navbar-expand-lg .navbar-collapse{
         justify-content: flex-end;
@@ -15,30 +16,23 @@
         }
     }
     .navbar-dark .navbar-nav .nav-link{
-        color: rgba(8, 8, 8, 0.75);
-        font-weight: 600;
+        font-weight: 500;
 
         &:hover{
-            color: $color-black;
+            color: $color-white;
         }
 
         &:focus{
-            color: $color-black;
+            color: $color-white;
         }
     }
     .bg-dark{
-        background-color: $color-white !important;
+        background-color: #070707 !important;
     }
 
     .navbar-expand-lg .navbar-nav .nav-link{
         margin: 0px 20px;
         padding: 0px;
-    }
-
-    .un-download-btn__btn-1{
-        font-size: 14px;
-        line-height: 17px;
-        padding: 8px 20px;
     }
 
     .modal-header{
@@ -60,7 +54,10 @@
 
     .navbar-toggler{
         background-color: $color-black;
-        border: 1px solid $color-black;
+        border: 1px solid $color-white;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
     }
 
     .navbar>.container-fluid{
@@ -75,17 +72,34 @@
     &__logo{
         width: 40px;
         height: auto;
+        vertical-align: middle;
     }
 
     &__txt{
         font-size: 16px;
         line-height: 20px;
         font-weight: 600;
+        color: $color-white;
     }
 
     &__inner{
         display: flex;
         align-items: center;
+    }
+
+    .un-download-btn__btn-1{
+        font-size: 14px;
+        line-height: 17px;
+        padding: 8px 20px;
+
+        &--wht{
+            background: linear-gradient(to bottom right, #ffffff, #c1c1c4);
+            color: $color-black;
+    
+            &:hover{
+                background: linear-gradient(to bottom right, #c1c1c4, #ffffff);
+            }
+        }
     }
     
 }
@@ -120,13 +134,15 @@
             margin-top: 15px;
             margin-left: 0px;
         }
-        .navbar-expand-lg .navbar-collapse{
-            margin: 10px 0px;
-        }
         .navbar-expand-lg .navbar-nav .nav-link{
             margin: 2px 0px;
             padding: 0px;
         }
-        
+        .navbar-toggler{
+            margin-bottom: 10px;
+        }
+        &__inner{
+            margin-bottom: 10px;
+        }
     }
 }

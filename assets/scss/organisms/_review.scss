@@ -26,8 +26,8 @@
         background: linear-gradient(to bottom right, #000000, #757785);
         border-radius: 50%;
         outline: none;
-        padding: 10px 15px;
-        margin: 10px;
+        padding: 13px;
+        margin-right: 15px;
         transition: 0.5s ease-in-out;
 
         &:hover{
@@ -45,8 +45,7 @@
         background: linear-gradient(to bottom right, #000000, #757785);
         border-radius: 50%;
         outline: none;
-        padding: 10px 15px;
-        margin: 10px;
+        padding: 13px;
         transition: 0.5s ease-in-out;
 
         &:hover{
@@ -57,7 +56,8 @@
 
     &__btn-wrap{
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
+     
     }
 
     .un-title{
@@ -80,6 +80,10 @@
 @include tablet{
     .un-review{
         padding-top: 10px;
+
+        &__btn-wrap{
+            display: none;
+        }
     }
 }
 
