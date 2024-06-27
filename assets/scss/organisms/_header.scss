@@ -1,0 +1,132 @@
+.un-header{
+    width: 100%;
+
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: flex-end;
+    }
+    .navbar{
+        padding: 10px 0px;
+    }
+    .btn{
+        padding: 5px 10px;
+
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    .navbar-dark .navbar-nav .nav-link{
+        color: rgba(8, 8, 8, 0.75);
+        font-weight: 600;
+
+        &:hover{
+            color: $color-black;
+        }
+
+        &:focus{
+            color: $color-black;
+        }
+    }
+    .bg-dark{
+        background-color: $color-white !important;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link{
+        margin: 0px 20px;
+        padding: 0px;
+    }
+
+    .un-download-btn__btn-1{
+        font-size: 14px;
+        line-height: 17px;
+        padding: 8px 20px;
+    }
+
+    .modal-header{
+        font-weight: 600;
+    }
+    .modal-dialog{
+        max-width: 400px;
+    }
+    .modal-content{
+        border-radius: 0.5rem;
+    }
+    .form-control{
+        font-size: 14px;
+    }
+    .form-control:focus{
+        box-shadow: none;
+        border-color: rgb(12, 12, 12);
+    }
+
+    .navbar-toggler{
+        background-color: $color-black;
+        border: 1px solid $color-black;
+    }
+
+    .navbar>.container-fluid{
+        flex-wrap: wrap;
+    }
+
+    .un-download-btn{
+        margin-left: 20px;
+    }
+
+
+    &__logo{
+        width: 40px;
+        height: auto;
+    }
+
+    &__txt{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+
+    &__inner{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+
+@include tablet{
+    .un-header{
+        .navbar-expand-lg .navbar-toggler{
+            display: none;   
+        }
+        .navbar-expand-lg .navbar-collapse{
+            display: flex !important;
+            flex-basis: auto;
+        }
+        .navbar-expand-lg .navbar-nav{
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-nav .nav-link{
+            margin: 0px 10px;
+            padding: 0px;
+        }
+        .un-download-btn{
+            margin-left: 5px;
+        }
+    }
+}
+
+@include mobile{
+    .un-header{
+        .un-download-btn{
+            margin-top: 15px;
+            margin-left: 0px;
+        }
+        .navbar-expand-lg .navbar-collapse{
+            margin: 10px 0px;
+        }
+        .navbar-expand-lg .navbar-nav .nav-link{
+            margin: 2px 0px;
+            padding: 0px;
+        }
+        
+    }
+}

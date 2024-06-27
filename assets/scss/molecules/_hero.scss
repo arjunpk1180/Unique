@@ -1,0 +1,101 @@
+.un-hero{
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-light-black;
+
+    ul{
+        padding-top: $spacer-5;
+    }
+
+    .nav li{
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__container{
+        padding: 50px $spacer-0;
+    }
+
+
+    &__outer{
+        width: 40%;
+        padding: $spacer-3;
+
+        &_head{
+            font-size: 55px;
+            line-height: 65px;
+
+            font-weight: 700;
+            color: $color-black;
+            padding-bottom: $spacer-4;
+        }
+        &_content{
+            
+            font-size: 20px;
+            line-height: 30px;
+            color: $color-black;
+          
+        }
+    }
+
+    &__icons{
+        width: 60px;
+        height: auto;
+        transition: 0.2s;
+        filter: grayscale(100%);
+        cursor: pointer;
+
+        &:hover{
+            transform: translateY(-5px);
+            transition: ease-in 0.2s;
+            filter: none;
+        }
+
+        &--big{
+            width: 80px;
+
+        }
+    }
+
+    &__img-pos{
+
+        position: absolute;
+        right: -310px;
+        bottom: 0;
+        transform: translateX(0px);
+        transition: 1s;
+    }
+    .tab-pane.active{
+        .pf-hero__img-pos{
+            transition: 1s;
+            transition-delay: 1s;
+        }
+    }
+
+    .nav{
+        align-content: flex-end;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .active{
+            filter: none;
+        }
+
+    }
+
+
+    
+
+       
+        
+
+       
+    }
+
+    
+    

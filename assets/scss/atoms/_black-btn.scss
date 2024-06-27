@@ -1,0 +1,31 @@
+.un-download-btn{
+
+    &__btn-1{
+       display: flex;
+       align-items: center;
+       font-size: 16px;
+       line-height: 20px;
+       color: $color-white;
+       background: linear-gradient(to bottom right, #000000, #757785);
+       border-radius: 30px;
+       transition: 0.5s ease-in-out;
+       outline: none;
+       padding: 10px 30px;
+   
+       svg{
+           width: 16px;
+           height: auto;
+           display: flex;
+           align-items: center;
+           margin-right: 4px;
+       }
+       
+   
+       &:hover{
+        transition: 0.5s ease-in-out;
+        background: linear-gradient(to bottom right, #757785, #000000);
+       }
+   
+    }
+       
+   }
